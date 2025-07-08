@@ -2,7 +2,9 @@
 
 :root {
     --primary-color: #FD6E0A;
+    --dark-1: #181818;
     --dark-2: #474747;
+    --dark-3: #757575;
     --bg-color: #FFF8F3;
 }
 
@@ -12,6 +14,9 @@ body {
 
 header {
     background-color: var(--bg-color);
+    background-image: url('../images/developer.png'), url('../images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: center left, bottom right;
 }
 
 nav h3 {
@@ -27,7 +32,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 230px;
+    margin: 0 210px;
+    /* position: fixed; */
 }
 
 nav ul {
@@ -54,4 +60,101 @@ nav ul li a {
     padding: 18px 35px 19px 36px;
     font-size: 20px;
     border-radius: 5px;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 80px 0 210px;
+}
+
+.photo {
+    /* background: ; */
+}
+
+.photo img {
+    max-width: 584px;
+    max-height: 676px;
+}
+
+.text {
+    /* margin: 0 230px; */
+    max-width: 585px;
+    max-height: 356px;
+}
+.text h3 {
+    color: var(--dark-2);
+    font-weight: 600;
+    font-size: 45px;
+    /* background-color: aqua; */
+    margin: -50px auto;
+}
+
+.text h1 {
+    color: var(--dark-1);
+    font-weight: bold;
+    font-size: 85px;
+    /* background-color: cornflowerblue; */
+    margin: 52px auto  30px;
+} 
+
+.text p {
+    font-size: 18px;
+    color: var(--dark-3);
+    margin: 30px auto;
+    line-height: 2rem;
+}
+
+.btn-2 {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    font-weight: bold;
+    padding: 18px 35px 19px 36px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    margin-left: 30px;
+}
+
+.pink-bg {
+    background: var(--bg-color);
+    /* background: lightcoral; */
+    margin: 130px 230px;
+    text-align: center;
+    max-height: 550px;
+    max-width: 1140px;
+    padding: 131px 156px;
+}
+
+.textarea h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--dark-1);
+}
+
+.textarea p {
+    font-size: 20px;
+    color: var(--dark-3);
+    line-height: 2rem;
+    margin: 20px auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info div p {
+    font-size: 22px;
+    
+}
+
+.info div h3 {
+    color: var(--dark-2);
+    font-weight: bold;
+    font-size: 22px;
+    margin: -20px auto;
 }
